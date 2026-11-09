@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="ჭორაობა — ანონიმური სივრცე გულწრფელი აზრებისთვის.">
+  <title>ჭორაობა — შენი ანონიმური სივრცე</title>
+  <style>
+    :root{font-family:"Noto Sans Georgian","Segoe UI",sans-serif;color:#25271f;background:#f4f3ed;font-synthesis:none;text-rendering:optimizeLegibility;--ink:#25271f;--muted:#888980;--line:#e7e5dc;--paper:#fffefa;--lime:#d8f16e;--coral:#e9715c;--olive:#788b3f;--serif:Georgia,serif}*{box-sizing:border-box}body{margin:0;min-width:320px;min-height:100vh;background:radial-gradient(ellipse at 50% -150px,#e7ead9 0,transparent 510px),#f4f3ed}button,input,textarea,select{font:inherit}button{color:inherit}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:2px solid #9db750;outline-offset:3px}button:disabled{opacity:.5;cursor:not-allowed}.topbar{height:66px;position:sticky;z-index:5;top:0;background:#fbfaf5ed;backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(calc((100vw - 1200px)/2),24px)}.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font-weight:800;font-size:17px}.brand-icon{width:32px;height:32px;border-radius:11px;background:var(--ink);color:var(--lime);display:grid;place-items:center;font-size:18px}.brand b{color:var(--coral)}.header-middle{font-size:10px;color:#77796f;display:flex;align-items:center;gap:7px}.live{width:7px;height:7px;background:#a0b94c;border-radius:50%;box-shadow:0 0 0 3px #a0b94c24}.header-actions{display:flex;gap:8px;align-items:center}.plain-icon{border:0;background:transparent;width:34px;height:34px;display:grid;place-items:center;border-radius:8px;color:#707269;cursor:pointer}.plain-icon:hover{background:#eeede5}.app{max-width:1180px;margin:0 auto;padding:24px 24px 80px;display:grid;grid-template-columns:190px minmax(0,600px) 230px;gap:32px;justify-content:center;align-items:start}.leftbar,.rightbar{position:sticky;top:89px}.section-label{font-size:9px;color:#9b9c92;text-transform:uppercase;letter-spacing:.07em;font-weight:700;margin:13px 10px}.nav{display:grid;gap:4px}.nav button{height:40px;border:0;background:transparent;border-radius:7px;text-align:left;padding:0 11px;display:flex;align-items:center;gap:11px;font-size:11px;color:#6d7067;cursor:pointer}.nav button:hover,.nav button.active{background:#e8ebdd;color:#424a31}.nav button.active{font-weight:700}.nav svg{width:17px;height:17px}.topic-list{display:grid;gap:3px}.topic-list button{border:0;background:transparent;display:flex;align-items:center;gap:9px;padding:8px 11px;border-radius:6px;color:#75776e;font-size:10px;text-align:left;cursor:pointer}.topic-list button:hover,.topic-list button.active{background:#eae9e2;color:var(--ink)}.topic-dot{width:8px;height:8px;border-radius:3px;background:#ee9b78}.topic-dot.t1{background:#a6b563}.topic-dot.t2{background:#d8b15d}.topic-dot.t3{background:#85b4a1}.topic-dot.t4{background:#aaa093}.privacy-note{margin-top:33px;padding:12px;border:1px solid #e5e3d9;border-radius:7px;background:#faf9f4;font-size:9px;color:#83847b;line-height:1.75}.privacy-note strong{color:#45483e}.privacy-lock{font-size:14px;color:#778a3e;margin-right:5px}.main{min-width:0}.hero{height:168px;background:#282c24;color:#fffdf5;border-radius:9px;padding:23px 25px;position:relative;overflow:hidden;display:flex;align-items:center}.hero:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(137deg,transparent 0 40px,#ffffff08 41px 42px);pointer-events:none}.hero-copy{position:relative;z-index:1}.hero-kicker{font-size:8px;color:#d1df91;display:flex;align-items:center;gap:6px}.hero h1{font-size:25px;line-height:1.32;margin:10px 0 6px}.hero h1 em{font-family:var(--serif);font-weight:400;color:var(--lime)}.hero p{margin:0;color:#c1c3b9;font-size:9px}.hero-art{position:absolute;right:31px;top:13px;width:154px;height:140px;display:grid;place-items:center}.hero-ring{position:absolute;width:135px;height:95px;border:1px solid #d8f16e40;border-radius:50%;transform:rotate(-25deg)}.hero-ring.r2{width:151px;height:124px;transform:rotate(38deg);border-color:#ffffff20}.hero-bubble{position:relative;width:67px;height:60px;background:var(--lime);color:var(--ink);border-radius:19px 19px 19px 5px;transform:rotate(-8deg);display:grid;place-items:center;font-family:var(--serif);font-size:30px;box-shadow:0 8px 30px #12150e60}.hero-star{position:absolute;right:6px;top:15px;color:var(--coral);font-size:24px}.local-banner{margin-top:12px;padding:10px 12px;border:1px solid #eadcad;border-radius:7px;background:#fff9e7;display:flex;align-items:center;gap:9px;color:#746943;font-size:9px;line-height:1.6}.local-banner strong{color:#554b2a}.local-banner button{margin-left:auto;flex:none;border:0;background:transparent;color:#817958;font-size:9px;text-decoration:underline;cursor:pointer}.composer{margin-top:13px;padding:13px;background:var(--paper);border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;gap:10px;box-shadow:0 4px 12px #24271905}.avatar{width:31px;height:31px;flex:none;border-radius:50%;display:grid;place-items:center;background:#eceee4;color:#727764;font-size:13px}.composer-open{flex:1;min-width:0;text-align:left;border:1px solid #eeece5;border-radius:20px;height:36px;background:#f8f7f2;color:#999a91;padding:0 14px;font-size:10px;cursor:text}.composer-open:hover{background:#f0f0e9}.composer-photo{width:35px;height:35px;flex:none;border:0;border-radius:9px;background:#e9eddc;color:#70853b;display:grid;place-items:center;cursor:pointer}.composer-photo:hover{background:#dfe6c8}.feed-head{display:flex;align-items:center;justify-content:space-between;margin:23px 1px 10px}.feed-head h2{font-size:13px;margin:0;display:flex;align-items:center;gap:8px}.feed-head h2:before{content:"";display:block;width:6px;height:18px;border-radius:2px;background:var(--coral)}.post-count{font-family:Arial,sans-serif;font-size:9px;color:#8b8d82;background:#e9e8e0;border-radius:4px;padding:4px 6px}.feed-filter{font-size:9px;color:#85877d;border:1px solid #e3e1d8;background:#fbfaf6;border-radius:5px;padding:6px 8px}.post{background:var(--paper);border:1px solid var(--line);border-radius:8px;margin-bottom:11px;overflow:hidden;animation:rise .3s both}.post-top{padding:13px 14px 8px;display:flex;align-items:center;gap:8px}.post-author{min-width:0;display:grid;gap:3px}.post-author strong{font-size:9px}.post-author small{font-size:8px;color:#999a90}.post-author small i{display:inline-block;width:3px;height:3px;border-radius:50%;background:#c1c1b6;vertical-align:middle;margin:0 4px}.post-topic{color:#819246!important}.post-more{margin-left:auto;border:0;background:transparent;color:#8d8e85;width:27px;height:27px;border-radius:6px;display:grid;place-items:center;cursor:pointer}.post-more:hover{background:#f0efe8}.post-menu{margin-left:auto;display:flex;gap:5px}.post-menu button{border:0;background:transparent;color:#99998f;font-size:8px;cursor:pointer}.post-menu button:hover{color:#bf574a}.post-text{white-space:pre-wrap;overflow-wrap:anywhere;padding:4px 15px 13px;margin:0;font-size:11px;line-height:1.85}.post-image{display:block;width:100%;max-height:580px;object-fit:cover;background:#eeede6}.post-actions{height:39px;margin:0 13px;border-bottom:1px solid #efede6;display:flex;align-items:center;gap:14px}.action-button{border:0;background:transparent;display:flex;align-items:center;gap:5px;padding:5px 1px;color:#75776d;font-size:9px;cursor:pointer}.action-button:hover{color:#71843b}.action-button svg{width:16px;height:16px}.comment-count{margin-left:auto;color:#9b9c93;font-size:8px}.comments{padding:9px 14px 12px}.comment{display:flex;gap:7px;margin:9px 0}.comment .avatar{width:23px;height:23px;font-size:10px}.comment-body{min-width:0;flex:1}.comment-line{background:#f1f0ea;border-radius:3px 8px 8px 8px;display:inline-block;max-width:100%;padding:7px 9px}.comment-line strong{font-size:8px}.comment-line p{font-size:9px;line-height:1.7;margin:4px 0 0;overflow-wrap:anywhere}.comment-foot{margin:4px 0 0 2px;color:#a0a096;font-size:7px}.comment-form{display:flex;gap:7px;align-items:center;margin-top:10px;padding-top:9px;border-top:1px solid #efede6}.comment-form input{flex:1;min-width:0;border:0;background:transparent;outline:0;font-size:9px}.comment-form button{width:27px;height:27px;border:0;background:#e9eddd;color:#6e8239;border-radius:6px;display:grid;place-items:center;cursor:pointer}.empty{min-height:220px;border:1px dashed #d9d8cd;background:#faf9f4a8;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px}.empty-icon{position:relative;color:#87984e}.empty-icon span{position:absolute;right:-10px;top:-9px;color:var(--coral)}.empty h3{margin:13px 0 5px;font-size:12px}.empty p{max-width:275px;color:#92938a;font-size:9px;line-height:1.7;margin:0 0 12px}.empty button,.primary-button{display:flex;align-items:center;justify-content:center;gap:7px;border:0;border-radius:6px;background:var(--ink);color:white;min-height:34px;padding:0 12px;font-size:9px;font-weight:700;cursor:pointer}.empty button:hover,.primary-button:hover{background:#4b5735}.right-title{display:flex;align-items:center;justify-content:space-between;font-size:11px;font-weight:700}.right-title span{color:var(--coral)}.question{margin-top:11px;border:1px solid #efd6c9;border-radius:7px;background:#f8e9df;padding:12px}.question small{color:#a46b55;font-size:8px}.question h3{font-family:var(--serif);font-size:14px;line-height:1.55;font-weight:400;margin:9px 0}.question button{border:0;background:transparent;padding:0;color:#946d59;font-size:8px;cursor:pointer}.topic-head{margin:24px 0 8px;display:flex;justify-content:space-between;font-size:10px;font-weight:700}.topic-head span{font-size:8px;color:#a0a095;font-weight:400}.trending{display:grid}.trend{border:0;border-bottom:1px solid var(--line);background:transparent;padding:9px 1px;display:flex;align-items:center;gap:8px;text-align:left;cursor:pointer}.trend-icon{width:26px;height:26px;border-radius:7px;background:#e8ebdc;color:#75883d;display:grid;place-items:center;font-size:10px}.trend:nth-child(2) .trend-icon{background:#f2e8d8;color:#a98651}.trend:nth-child(3) .trend-icon{background:#f5e1dc;color:#ba715f}.trend-label{display:grid;gap:3px;flex:1}.trend-label strong{font-size:8px}.trend-label small{font-size:7px;color:#999a91}.trend:hover strong{color:var(--olive)}.rules{margin-top:20px;padding-top:12px;border-top:1px solid var(--line)}.rules strong{font-size:9px}.rules p{font-size:8px;color:#96978e;line-height:1.6}.footer{margin-top:22px;color:#a4a49a;font-size:7px}.overlay{position:fixed;inset:0;z-index:20;background:#22251fb5;backdrop-filter:blur(3px);display:grid;place-items:center;padding:16px;animation:fade .16s}.dialog{width:min(440px,100%);background:var(--paper);border-radius:10px;padding:20px;border:1px solid #e6e4dc;box-shadow:0 20px 70px #171a1250;animation:rise .2s}.dialog-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:15px}.dialog-head h2{font-size:14px;margin:0}.close{border:0;background:transparent;color:#85867d;width:28px;height:28px;display:grid;place-items:center;border-radius:6px;cursor:pointer}.close:hover{background:#efeee8}.dialog textarea{width:100%;min-height:105px;resize:vertical;border:1px solid #e7e5dc;border-radius:6px;padding:10px;font-size:10px;line-height:1.7;background:#fffefa}.dialog-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}.upload-label{display:flex;align-items:center;gap:7px;color:#697c39;font-size:9px;cursor:pointer}.upload-label input{display:none}.topic-select{height:32px;border:1px solid #e5e3db;background:#fffefa;border-radius:5px;font-size:8px;padding:0 7px}.preview-wrap{position:relative;display:none;margin-top:10px;max-height:240px;overflow:hidden;border-radius:6px;background:#eeede6}.preview-wrap img{display:block;width:100%;max-height:240px;object-fit:contain}.remove-image{position:absolute;right:7px;top:7px;border:0;border-radius:50%;width:26px;height:26px;background:#222b;color:white;cursor:pointer}.dialog .primary-button{margin-left:auto}.modal-note{font-size:8px;color:#a0a096;text-align:center;margin:10px 0 0}.report-list{display:grid;gap:8px}.report-choice{padding:10px;border:1px solid #e7e5dc;border-radius:5px;background:#fffefa;text-align:left;font-size:9px;cursor:pointer}.report-choice:hover{border-color:#b7c37e}.toast{position:fixed;z-index:30;bottom:22px;left:50%;transform:translateX(-50%);background:#292d25;color:white;border-radius:7px;padding:10px 14px;font-size:9px;box-shadow:0 8px 30px #15181140;animation:fade .2s;max-width:calc(100vw - 28px)}.mobile-nav{display:none}@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@keyframes fade{from{opacity:0}to{opacity:1}}
+    @media(max-width:1020px){.app{grid-template-columns:175px minmax(0,600px);gap:24px}.rightbar{display:none}}
+    @media(max-width:700px){.topbar{height:58px;padding:0 14px}.header-middle{display:none}.app{display:block;padding:14px 12px 84px;max-width:620px}.leftbar{display:none}.hero{height:150px;padding:19px}.hero h1{font-size:22px}.hero-art{right:4px;transform:scale(.85)}.composer{padding:10px}.feed-head{margin-top:19px}.mobile-nav{position:fixed;z-index:8;bottom:0;left:0;right:0;height:62px;padding:4px 9px env(safe-area-inset-bottom);background:#fbfaf6f5;backdrop-filter:blur(14px);border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-around}.mobile-nav button{flex:1;height:48px;border:0;background:transparent;color:#85877d;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:3px;font-size:7px;cursor:pointer}.mobile-nav button.active{color:#6e8239}.mobile-nav .add{flex:0 0 40px;height:38px;border-radius:12px;background:var(--ink);color:var(--lime);margin:0 9px}.toast{bottom:73px}.post-image{max-height:500px}}
+    @media(max-width:380px){.hero-art{right:-22px;opacity:.72}.hero-copy{max-width:220px}.hero h1{font-size:20px}.local-banner{font-size:8px}.local-banner button{font-size:8px}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="ჭორაობა, მთავარი"><span class="brand-icon">ჭ</span><span>ჭორაობა<b>.</b></span></a>
+    <div class="header-middle"><span class="live"></span> შენი ანონიმური სივრცე</div>
+    <div class="header-actions"><button class="plain-icon" id="searchButton" title="ძებნა" aria-label="ძებნა"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button><button class="plain-icon" id="clearButton" title="ლოკალური შენახვის შესახებ" aria-label="ლოკალური შენახვის შესახებ"><svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg></button></div>
+  </header>
+  <div class="app">
+    <aside class="leftbar">
+      <div class="section-label">შენი სივრცე</div>
+      <nav class="nav"><button class="active" data-filter="ყველა"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3Z"/><path d="m19 15 .9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15Z"/></svg>საერთო ლენტა <span id="sideCount" style="margin-left:auto;color:#96978e;font-size:9px">0</span></button><button data-filter="პოპულარული"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17 17 7M7 7h10v10"/></svg>პოპულარული</button><button id="newPostSide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 5v14M5 12h14"/></svg>ახალი პოსტი</button></nav>
+      <div class="section-label" style="margin-top:25px">თემები</div>
+      <div class="topic-list"><button class="active" data-filter="ყველა">ყველა თემა</button><button data-filter="ურთიერთობები"><i class="topic-dot"></i>ურთიერთობები</button><button data-filter="სამსახური"><i class="topic-dot t1"></i>სამსახური</button><button data-filter="სწავლა"><i class="topic-dot t2"></i>სწავლა</button><button data-filter="ცხოვრება"><i class="topic-dot t3"></i>ცხოვრება</button><button data-filter="სხვა"><i class="topic-dot t4"></i>სხვა</button></div>
+      <div class="privacy-note"><span class="privacy-lock">▣</span>საჯაროდ ყველა <strong>ანონიმია.</strong><br>პოსტები ამ მოწყობილობის ბრაუზერში ინახება.</div>
+    </aside>
+    <main class="main">
+      <section class="hero"><div class="hero-copy"><span class="hero-kicker">✳ &nbsp; გულწრფელად, თავისუფლად</span><h1>თქვი რაც გაქვს<br><em>სათქმელი.</em></h1><p>აზრები, რომლებსაც სხვაგან ვერ ამბობ.</p></div><div class="hero-art" aria-hidden="true"><i class="hero-ring"></i><i class="hero-ring r2"></i><div class="hero-bubble">?</div><span class="hero-star">✳</span></div></section>
+      <div class="local-banner"><span>▣</span><div><strong>ლოკალური რეჟიმი</strong> · პოსტები და კომენტარები მხოლოდ ამ ბრაუზერში ინახება.</div><button id="localInfo">რატომ?</button></div>
+      <section class="composer"><span class="avatar">◉</span><button class="composer-open" id="openComposer">რა ხდება შენს გონებაში?</button><button class="composer-photo" id="photoQuick" title="ფოტოს დამატება" aria-label="ფოტოს დამატება"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/></svg></button></section>
+      <div class="feed-head"><h2 id="feedTitle">საერთო ლენტა <span class="post-count" id="postCount">0</span></h2><select class="feed-filter" id="sortSelect" aria-label="დალაგება"><option value="new">უახლესი</option><option value="popular">კომენტარებით</option></select></div>
+      <section id="feed" aria-live="polite"></section>
+    </main>
+    <aside class="rightbar"><div class="right-title">დღის შეკითხვა <span>✳</span></div><div class="question"><small>დღეს, შენთვის</small><h3>რისი თქმა გინდოდა დღეს, მაგრამ ვერ თქვი?</h3><button id="questionButton">უპასუხე ანონიმურად ↗</button></div><div class="topic-head">საუბრის თემები <span>აირჩიე</span></div><div class="trending"><button class="trend" data-filter="ურთიერთობები"><span class="trend-icon">#</span><span class="trend-label"><strong>ორი აზრი ერთდროულად</strong><small>ურთიერთობები</small></span></button><button class="trend" data-filter="სამსახური"><span class="trend-icon">//</span><span class="trend-label"><strong>ორშაბათის აღსარება</strong><small>სამსახური</small></span></button><button class="trend" data-filter="ცხოვრება"><span class="trend-icon">✳</span><span class="trend-label"><strong>პატარა გამარჯვებები</strong><small>ცხოვრება</small></span></button></div><div class="rules"><strong>ჩვენი წესები</strong><p>გულწრფელობა კი. ზიანი არა.<br>პატივისცემა, პირადი საზღვრები და კეთილი სიტყვა.</p></div><div class="footer">ჭორაობა · პირადი ლოკალური სივრცე</div></aside>
+  </div>
+  <nav class="mobile-nav"><button class="active" data-filter="ყველა"><span>⌂</span>ლენტა</button><button id="mobileSearch"><span>⌕</span>ძებნა</button><button class="add" id="mobileAdd" aria-label="ახალი პოსტი"><span>＋</span></button><button data-filter="პოპულარული"><span>↗</span>პოპულარული</button><button id="mobileClear"><span>◉</span>ჩემი პოსტები</button></nav>
+  <div id="modalRoot"></div><div id="toastRoot" aria-live="polite"></div>
+  <script>
+    (() => {
+      const DB_NAME = "choroba-browser-feed";
+      const STORE = "posts";
+      const topics = ["ურთიერთობები", "სამსახური", "სწავლა", "ცხოვრება", "სხვა"];
+      const state = { filter: "ყველა", sort: "new", search: "", image: null, preview: "" };
+      const feed = document.querySelector("#feed");
+      const modalRoot = document.querySelector("#modalRoot");
+      const toastRoot = document.querySelector("#toastRoot");
+      let dbPromise;
+
+      function openDb() {
+        if (dbPromise) return dbPromise;
+        dbPromise = new Promise((resolve, reject) => {
+          const request = indexedDB.open(DB_NAME, 1);
+          request.onupgradeneeded = () => request.result.createObjectStore(STORE, { keyPath: "id" });
+          request.onsuccess = () => resolve(request.result);
+          request.onerror = () => reject(request.error);
+        });
+        return dbPromise;
+      }
+
+      async function allPosts() {
+        const db = await openDb();
+        return new Promise((resolve, reject) => {
+          const request = db.transaction(STORE).objectStore(STORE).getAll();
+          request.onsuccess = () => resolve(request.result || []);
+          request.onerror = () => reject(request.error);
+        });
+      }
+
+      async function savePost(post) {
+        const db = await openDb();
+        return new Promise((resolve, reject) => {
+          const request = db.transaction(STORE, "readwrite").objectStore(STORE).put(post);
+          request.onsuccess = () => resolve();
+          request.onerror = () => reject(request.error);
+        });
+      }
+
+      async function removePost(id) {
+        const db = await openDb();
+        return new Promise((resolve, reject) => {
+          const request = db.transaction(STORE, "readwrite").objectStore(STORE).delete(id);
+          request.onsuccess = () => resolve();
+          request.onerror = () => reject(request.error);
+        });
+      }
+
+      function escapeHtml(value) {
+        return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]);
+      }
+
+      function timeAgo(value) {
+        const minutes = Math.max(0, Math.floor((Date.now() - value) / 60000));
+        if (minutes < 1) return "ახლახან";
+        if (minutes < 60) return `${minutes} წთ წინ`;
+        if (minutes < 1440) return `${Math.floor(minutes / 60)} სთ წინ`;
+        return new Date(value).toLocaleDateString("ka-GE", { day: "numeric", month: "short" });
+      }
+
+      function showToast(message) {
+        toastRoot.innerHTML = `<div class="toast" role="status">${escapeHtml(message)}</div>`;
+        window.setTimeout(() => { toastRoot.innerHTML = ""; }, 3000);
+      }
+
+      function svg(name) {
+        const paths = {
+          chat: '<path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8A8.5 8.5 0 0 1 8.7 3.9a8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5Z"/>',
+          send: '<path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/>',
+          flag: '<path d="M4 22V4m0 1c6-5 10 5 16 0v12c-6 5-10-5-16 0"/>',
+          trash: '<path d="M3 6h18m-2 0-1 14H6L5 6m3 0V4h8v2m-5 4v6m4-6v6"/>',
+          photo: '<rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/>',
+        };
+        return `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;
+      }
+
+      async function render() {
+        try {
+          let posts = await allPosts();
+          if (state.filter !== "ყველა" && state.filter !== "პოპულარული") posts = posts.filter((post) => post.topic === state.filter);
+          if (state.search) posts = posts.filter((post) => `${post.body} ${post.topic} ${(post.comments || []).map((comment) => comment.body).join(" ")}`.toLocaleLowerCase("ka-GE").includes(state.search.toLocaleLowerCase("ka-GE")));
+          posts.sort((a, b) => state.filter === "პოპულარული" || state.sort === "popular" ? (b.comments.length - a.comments.length || b.created - a.created) : b.created - a.created);
+          document.querySelector("#postCount").textContent = String(posts.length);
+          document.querySelector("#sideCount").textContent = String(posts.length);
+          document.querySelector("#feedTitle").childNodes[0].textContent = state.filter === "ყველა" ? "საერთო ლენტა " : state.filter + " ";
+          document.querySelectorAll("[data-filter]").forEach((button) => button.classList.toggle("active", button.dataset.filter === state.filter));
+          if (!posts.length) {
+            feed.innerHTML = `<div class="empty"><div class="empty-icon">${svg("chat")}<span>✳</span></div><h3>${state.search ? "ვერაფერი მოიძებნა." : "აქ ჯერ სიჩუმეა."}</h3><p>${state.search ? "სცადე სხვა სიტყვა ან თემა." : "გააზიარე შენი პირველი აზრი ან ფოტო და დაიწყე საუბარი."}</p><button id="emptyCreate">＋ პირველი პოსტი</button></div>`;
+            document.querySelector("#emptyCreate").addEventListener("click", () => openComposer());
+            return;
+          }
+          feed.innerHTML = posts.map((post) => {
+            const imageUrl = post.image ? URL.createObjectURL(post.image) : "";
+            const comments = (post.comments || []).map((comment) => `<div class="comment"><span class="avatar">◉</span><div class="comment-body"><div class="comment-line"><strong>ანონიმი</strong><p>${escapeHtml(comment.body)}</p></div><div class="comment-foot">${timeAgo(comment.created)}</div></div></div>`).join("");
+            return `<article class="post" data-id="${post.id}"><div class="post-top"><span class="avatar">◉</span><div class="post-author"><strong>ანონიმი</strong><small>${timeAgo(post.created)} <i></i> <span class="post-topic">${escapeHtml(post.topic)}</span></small></div><div class="post-menu"><button data-action="report" title="გასაჩივრება">${svg("flag")}</button><button data-action="delete" title="წაშლა">${svg("trash")}</button></div></div>${post.body ? `<p class="post-text">${escapeHtml(post.body)}</p>` : ""}${imageUrl ? `<img class="post-image" src="${imageUrl}" alt="ანონიმური პოსტის ფოტო">` : ""}<div class="post-actions"><button class="action-button" data-action="comment">${svg("chat")}<strong>${post.comments.length}</strong><span>კომენტარი</span></button><span class="comment-count">ანონიმურად საუბარი</span></div><div class="comments">${comments}<form class="comment-form"><span class="avatar">◉</span><input name="comment" maxlength="600" placeholder="კომენტარის დაწერა..." aria-label="ანონიმური კომენტარი" required><button title="კომენტარის გაგზავნა">${svg("send")}</button></form></div></article>`;
+          }).join("");
+          feed.querySelectorAll(".comment-form").forEach((form) => form.addEventListener("submit", onComment));
+          feed.querySelectorAll("[data-action]").forEach((button) => button.addEventListener("click", onPostAction));
+        } catch (error) {
+          feed.innerHTML = `<div class="empty"><h3>შენახვის ფუნქცია მიუწვდომელია.</h3><p>სცადე გვერდის Chrome-ში გახსნა ან ადგილობრივი სერვერით გაშვება.</p></div>`;
+          console.error(error);
+        }
+      }
+
+      async function onComment(event) {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const text = new FormData(form).get("comment").trim();
+        if (!text) return;
+        const post = (await allPosts()).find((item) => item.id === form.closest(".post").dataset.id);
+        if (!post) return;
+        post.comments.push({ body: text, created: Date.now() });
+        await savePost(post);
+        await render();
+        showToast("კომენტარი დაემატა.");
+      }
+
+      async function onPostAction(event) {
+        const button = event.currentTarget;
+        const postElement = button.closest(".post");
+        const post = (await allPosts()).find((item) => item.id === postElement.dataset.id);
+        if (!post) return;
+        if (button.dataset.action === "comment") {
+          const input = postElement.querySelector("input[name=comment]");
+          input.focus();
+          return;
+        }
+        if (button.dataset.action === "delete") {
+          if (!window.confirm("ეს პოსტი ამ მოწყობილობიდან წავშალო?")) return;
+          await removePost(post.id);
+          await render();
+          showToast("პოსტი უსტგადა.");
+          return;
+        }
+        openReport(post);
+      }
+
+      function closeModal() {
+        modalRoot.innerHTML = "";
+        state.image = null;
+        state.preview = "";
+      }
+
+      function openComposer() {
+        state.image = null;
+        modalRoot.innerHTML = `<div class="overlay" id="overlay"><form class="dialog" id="postForm"><div class="dialog-head"><h2>ახალი პოსტი</h2><button class="close" type="button" aria-label="დახურვა">✕</button></div><textarea name="body" maxlength="1200" placeholder="რა გაქვს სათქმელი?" aria-label="პოსტის ტექსტი"></textarea><div class="preview-wrap" id="previewWrap"><img id="imagePreview" alt="ფოტოს გადახედვა"><button class="remove-image" type="button" id="removeImage" aria-label="ფოტოს მოცილება">✕</button></div><div class="dialog-actions"><label class="upload-label">${svg("photo")} ფოტოს დამატება<input id="imageInput" type="file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif"></label><select class="topic-select" name="topic" aria-label="პოსტის თემა">${topics.map((topic) => `<option>${topic}</option>`).join("")}</select><button class="primary-button">გამოქვეყნება ${svg("send")}</button></div><p class="modal-note">ავტორი სხვებისთვის „ანონიმად“ გამოჩნდება.</p></form></div>`;
+        const overlay = document.querySelector("#overlay");
+        overlay.addEventListener("click", (event) => { if (event.target === overlay) closeModal(); });
+        document.querySelector(".close").addEventListener("click", closeModal);
+        document.querySelector("#imageInput").addEventListener("change", onImageSelect);
+        document.querySelector("#removeImage").addEventListener("click", () => { state.image = null; state.preview = ""; document.querySelector("#previewWrap").style.display = "none"; document.querySelector("#imageInput").value = ""; });
+        document.querySelector("#postForm").addEventListener("submit", onPublish);
+        document.querySelector("textarea[name=body]").focus();
+      }
+
+      async function onImageSelect(event) {
+        const file = event.target.files[0];
+        if (!file) return;
+        if (!file.type.startsWith("image/")) return showToast("აირჩიე ფოტო ფაილი.");
+        if (file.size > 20 * 1024 * 1024) return showToast("ფოტოს ზომა 20 მბ-ზე ნაკლები უნდა იყოს.");
+        try {
+          const bitmap = await createImageBitmap(file);
+          const scale = Math.min(1, 1800 / Math.max(bitmap.width, bitmap.height));
+          const canvas = document.createElement("canvas");
+          canvas.width = Math.round(bitmap.width * scale);
+          canvas.height = Math.round(bitmap.height * scale);
+          canvas.getContext("2d").drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+          bitmap.close();
+          const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/jpeg", 0.82));
+          if (!blob) throw new Error("Image could not be processed");
+          state.image = blob;
+          state.preview = URL.createObjectURL(blob);
+          document.querySelector("#imagePreview").src = state.preview;
+          document.querySelector("#previewWrap").style.display = "block";
+        } catch {
+          showToast("ფოტოს დამუშავება ვერ მოხერხდა.");
+        }
+      }
+
+      async function onPublish(event) {
+        event.preventDefault();
+        const form = new FormData(event.currentTarget);
+        const body = String(form.get("body") || "").trim();
+        if (!body && !state.image) return showToast("დაწერე ტექსტი ან დაამატე ფოტო.");
+        try {
+          await savePost({ id: crypto.randomUUID(), body, topic: String(form.get("topic")), image: state.image, created: Date.now(), comments: [], reports: [] });
+          closeModal();
+          await render();
+          showToast("პოსტი გამოქვეყნდა ამ მოწყობილობაზე.");
+        } catch {
+          showToast("შენახვა ვერ მოხერხდა. სცადე უფრო მცირე ფოტო.");
+        }
+      }
+
+      function openReport(post) {
+        modalRoot.innerHTML = `<div class="overlay" id="overlay"><section class="dialog"><div class="dialog-head"><h2>შინაარსის გასაჩივრება</h2><button class="close" type="button">✕</button></div><p style="font-size:9px;color:#85867d">საჩივარი ლოკალურად შეინახება ამ ბრაუზერში.</p><div class="report-list">${["შეურაცხმყოფელი შინაარსი", "სპამი ან რეკლამა", "მუქარა ან ძალადობა", "სხვა"].map((reason) => `<button class="report-choice">${reason}</button>`).join("")}</div></section></div>`;
+        document.querySelector(".close").addEventListener("click", closeModal);
+        document.querySelectorAll(".report-choice").forEach((button) => button.addEventListener("click", async () => {
+          post.reports = post.reports || [];
+          post.reports.push({ reason: button.textContent, created: Date.now() });
+          await savePost(post);
+          closeModal();
+          showToast("საჩივარი ჩაიწერა ამ მოწყობილობაზე.");
+        }));
+      }
+
+      function selectFilter(filter) {
+        state.filter = filter;
+        state.search = "";
+        render();
+      }
+
+      document.querySelector("#openComposer").addEventListener("click", openComposer);
+      document.querySelector("#photoQuick").addEventListener("click", openComposer);
+      document.querySelector("#newPostSide").addEventListener("click", openComposer);
+      document.querySelector("#mobileAdd").addEventListener("click", openComposer);
+      document.querySelector("#questionButton").addEventListener("click", () => { openComposer(); window.setTimeout(() => { const textarea = document.querySelector("textarea[name=body]"); if (textarea) textarea.value = "რისი თქმა გინდოდა დღეს, მაგრამ ვერ თქვი?\n\n"; }, 0); });
+      document.querySelector("#localInfo").addEventListener("click", () => showToast("ეს ვერსია ინახავს მონაცემებს მხოლოდ ამ ბრაუზერში; საერთო ონლაინ ლენტისთვის საჭიროა Supabase სერვერი."));
+      document.querySelector("#sortSelect").addEventListener("change", (event) => { state.sort = event.target.value; render(); });
+      document.querySelector("#searchButton").addEventListener("click", searchPrompt);
+      document.querySelector("#mobileSearch").addEventListener("click", searchPrompt);
+      document.querySelector("#clearButton").addEventListener("click", () => showToast("ეს პოსტები ამ ბრაუზერშია შენახული."));
+      document.querySelector("#mobileClear").addEventListener("click", () => showToast("ეს პოსტები ამ ბრაუზერშია შენახული."));
+      document.querySelectorAll("[data-filter]").forEach((button) => button.addEventListener("click", () => selectFilter(button.dataset.filter)));
+      document.addEventListener("keydown", (event) => { if (event.key === "Escape") closeModal(); });
+
+      function searchPrompt() {
+        const query = window.prompt("პოსტებში ძებნა");
+        if (query === null) return;
+        state.search = query.trim();
+        render();
+      }
+
+      render();
+    })();
+  </script>
+</body>
+</html>

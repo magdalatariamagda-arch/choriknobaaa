@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჭორაობა | პოსტები</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body class="posts-body" data-page="posts">
+    <div class="instagram-layout">
+      <div class="setup-notice" id="setupNotice" hidden><strong>Backend ჯერ არ არის მიერთებული.</strong> კონფიგურაციისთვის გახსენი <a href="README.md">README</a>.</div>
+      <aside class="instagram-sidebar">
+        <a class="instagram-wordmark" href="index.html">ჭორაობა</a>
+        <nav class="instagram-nav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>მთავარი</span></a>
+          <a class="active" href="posts.html" aria-current="page"><span class="nav-icon">▦</span><span>პოსტები</span></a>
+          <a href="upload.html"><span class="nav-icon">＋</span><span>შექმნა</span></a>
+          <a data-account-link href="auth.html#login"><span class="nav-icon">◉</span><span data-account-label>შესვლა / რეგისტრაცია</span></a>
+          <a data-admin-link href="admin.html" hidden><span class="nav-icon">⚙</span><span>ადმინისტრატორი</span></a>
+        </nav>
+        <a class="sidebar-profile" href="account.html"><span class="profile-mini">?</span><span data-auth-email>სტუმარი</span></a>
+      </aside>
+
+      <main class="instagram-main">
+        <section class="feed-toolbar"><div><p class="explore-eyebrow">საერთო ლენტა</p><h1>ყველა პოსტი</h1></div><label class="search-box"><span>⌕</span><input id="feedSearch" type="search" placeholder="მოძებნე წარწერებსა და კომენტარებში" /></label></section>
+        <p id="feedStatus" class="feed-status" role="status"></p>
+        <div id="postsList" class="feed-list" aria-live="polite"></div>
+      </main>
+
+      <aside class="instagram-suggestions">
+        <div class="current-profile">
+          <span class="suggestion-avatar anonymous-avatar">?</span>
+          <span class="suggestion-copy"><strong data-auth-email>სტუმარი</strong><small>შენი სივრცე</small></span>
+          <a data-account-link href="auth.html#login"><span data-account-label>ანგარიში</span></a>
+        </div>
+        <div class="suggestion-heading"><strong>სწრაფი ბმულები</strong></div>
+        <a class="side-action" href="upload.html">＋ ფოტოს ატვირთვა</a>
+        <a class="side-action" href="index.html">⌂ მთავარი</a>
+        <section class="privacy-note"><strong>ანონიმური კომენტარები</strong><p>სხვა მომხმარებლები კომენტართან მხოლოდ „ანონიმს“ ხედავენ.</p><a href="privacy.html">კონფიდენციალურობა</a></section>
+        <p class="suggestion-footer">კონფიდენციალურობა · დახმარება<br />© 2026 ჭორაობა</p>
+      </aside>
+    </div>
+    <dialog class="report-dialog" id="reportDialog"><form id="reportForm" method="dialog"><button class="dialog-close" value="cancel" aria-label="დახურვა">×</button><p class="explore-eyebrow">უსაფრთხოება</p><h2>შეტყობინება</h2><p>მიზეზი ადმინისტრატორს გაეგზავნება. ადმინისტრატორს შეუძლია ავტორის ანგარიშის იდენტიფიცირება.</p><input type="hidden" name="targetType" /><input type="hidden" name="targetId" /><label for="reportReason">მიზეზი</label><textarea id="reportReason" name="reason" maxlength="500" minlength="3" required></textarea><p id="reportMessage" class="feed-status" role="status"></p><button class="primary-action" type="submit">გაგზავნა</button></form></dialog>
+  </body>
+</html>

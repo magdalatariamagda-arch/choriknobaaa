@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჭორაობა | ჩემი ანგარიში</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body class="posts-body" data-page="account">
+    <div class="instagram-layout">
+      <div class="setup-notice" id="setupNotice" hidden><strong>Backend ჯერ არ არის მიერთებული.</strong> კონფიგურაციისთვის გახსენი <a href="README.md">README</a>.</div>
+      <aside class="instagram-sidebar">
+        <a class="instagram-wordmark" href="index.html">ჭორაობა</a>
+        <nav class="instagram-nav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>მთავარი</span></a>
+          <a href="posts.html"><span class="nav-icon">▦</span><span>პოსტები</span></a>
+          <a href="upload.html"><span class="nav-icon">＋</span><span>შექმნა</span></a>
+          <a class="active" href="account.html"><span class="nav-icon">◉</span><span>ჩემი ანგარიში</span></a>
+          <a data-admin-link href="admin.html" hidden><span class="nav-icon">⚙</span><span>ადმინისტრატორი</span></a>
+        </nav>
+        <a class="sidebar-profile" href="account.html"><span class="profile-mini">?</span><span data-auth-email>სტუმარი</span></a>
+      </aside>
+      <main class="instagram-main account-main">
+        <section class="account-panel">
+          <p class="explore-eyebrow">პირადი სივრცე</p>
+          <h1>ჩემი ანგარიში</h1>
+          <div class="blocked-notice" id="blockedNotice" hidden>ანგარიში შეზღუდულია. დაუკავშირდი ადმინისტრატორს.</div>
+          <div class="account-detail"><small>ელფოსტა · პირადი</small><strong id="accountEmail">შედი ანგარიშში</strong></div>
+          <div class="account-detail"><small>ანგარიშის შექმნის თარიღი</small><strong id="accountCreated">მხოლოდ შენთვის ჩანს</strong></div>
+          <p class="auth-privacy">საჯარო პოსტებსა და კომენტარებში შენი ელფოსტა ან ანგარიშის სახელი არ ჩანს. ადმინისტრატორს შეუძლია ავტორის იდენტიფიცირება უსაფრთხოებისა და მოდერაციისთვის.</p>
+          <p class="feed-status" id="accountStatus" role="status"></p>
+          <div class="account-actions">
+            <a class="action-button" id="adminLink" href="admin.html" hidden>ადმინისტრატორის პანელი</a>
+            <button class="neutral-action" id="signOutButton" type="button">ანგარიშიდან გამოსვლა</button>
+          </div>
+        </section>
+      </main>
+      <aside class="instagram-suggestions">
+        <div class="suggestion-heading"><strong>ანგარიშის მართვა</strong></div>
+        <a class="side-action" href="index.html">⌂ საერთო ლენტა</a>
+        <a class="side-action" href="privacy.html">კონფიდენციალურობის პოლიტიკა</a>
+      </aside>
+    </div>
+  </body>
+</html>

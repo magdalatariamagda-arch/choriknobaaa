@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჭორაობა | ანგარიში</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body class="posts-body" data-page="auth">
+    <div class="instagram-layout">
+      <div class="setup-notice" id="setupNotice" hidden><strong>Backend ჯერ არ არის მიერთებული.</strong> კონფიგურაციისთვის გახსენი <a href="README.md">README</a>.</div>
+      <aside class="instagram-sidebar">
+        <a class="instagram-wordmark" href="index.html">ჭორაობა</a>
+        <nav class="instagram-nav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>მთავარი</span></a>
+          <a href="posts.html"><span class="nav-icon">▦</span><span>პოსტები</span></a>
+          <a href="upload.html"><span class="nav-icon">＋</span><span>შექმნა</span></a>
+          <a class="active" href="auth.html"><span class="nav-icon">◉</span><span>ანგარიში</span></a>
+        </nav>
+        <a class="sidebar-profile" href="account.html"><span class="profile-mini">?</span><span data-auth-email>სტუმარი</span></a>
+      </aside>
+
+      <main class="instagram-main auth-main">
+        <section class="instagram-auth-card">
+          <a class="auth-wordmark" href="index.html">ჭორაობა</a>
+          <p class="auth-intro">შედი ან შექმენი ანგარიში. საჯარო პოსტებსა და კომენტარებში სახელი არ გამოჩნდება.</p>
+          <div class="auth-switch" role="tablist" aria-label="ანგარიშის მოქმედება">
+            <button class="auth-switch-button" id="loginTab" type="button" role="tab" aria-selected="false" aria-controls="loginPanel">შესვლა</button>
+            <button class="auth-switch-button" id="registerTab" type="button" role="tab" aria-selected="false" aria-controls="registerPanel">რეგისტრაცია</button>
+          </div>
+          <form class="auth-form-box" id="loginPanel" data-auth-form data-mode="login" role="tabpanel" aria-labelledby="loginTab">
+            <h1>კეთილი იყოს დაბრუნება</h1>
+            <input type="email" name="email" placeholder="ელ. ფოსტა" aria-label="ელ. ფოსტა" autocomplete="email" required />
+            <input type="password" name="password" placeholder="პაროლი" aria-label="პაროლი" autocomplete="current-password" required />
+            <button class="primary-action" type="submit">შესვლა</button>
+          </form>
+          <form class="auth-form-box hidden" id="registerPanel" data-auth-form data-mode="register" role="tabpanel" aria-labelledby="registerTab">
+            <h1>შექმენი ანგარიში</h1>
+            <input type="email" name="email" placeholder="ელ. ფოსტა" aria-label="ელ. ფოსტა" autocomplete="email" required />
+            <input type="password" name="password" placeholder="პაროლი" aria-label="პაროლი" autocomplete="new-password" minlength="10" required />
+            <input type="password" name="password-confirm" placeholder="გაიმეორე პაროლი" aria-label="გაიმეორე პაროლი" autocomplete="new-password" minlength="10" required />
+            <button class="primary-action" type="submit">რეგისტრაცია</button>
+          </form>
+          <p class="auth-message" id="authMessage" role="status"></p>
+          <p class="auth-privacy">შენი ელფოსტა და ანგარიშის ID საჯარო არ არის. ადმინისტრატორს შეუძლია ავტორის იდენტიფიცირება უსაფრთხოებისა და მოდერაციისთვის.</p>
+        </section>
+      </main>
+
+      <aside class="instagram-suggestions">
+        <div class="current-profile"><span class="suggestion-avatar">ა</span><span class="suggestion-copy"><strong>ანონიმური საზოგადოება</strong><small>ფოტოები და აზრები</small></span></div>
+        <div class="suggestion-heading"><strong>საზოგადოებრივი ლენტა</strong><a href="posts.html">ნახვა</a></div>
+        <p class="suggestion-footer">ანგარიშები Supabase Auth-ში ინახება. პაროლებს აპლიკაცია არ კითხულობს და არ ინახავს.</p>
+      </aside>
+    </div>
+  </body>
+</html>

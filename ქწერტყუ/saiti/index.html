@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ჭორაობა — შენი ანონიმური სივრცე</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="#">ჭორაობა<span>.</span></a>
+    <div class="header-actions">
+      <div class="tagline">შენი სივრცე, შენი ამბები 🤫</div>
+      <a class="account-link" href="auth.html#login">შესვლა / რეგისტრაცია</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <p id="setupNotice" class="setup-notice" hidden>პოსტების გამოქვეყნება და საერთო ლენტა Supabase-ის კონფიგურაციას საჭიროებს. იხილე <a href="README.md">დაყენების ინსტრუქცია</a>.</p>
+    <section class="welcome">
+      <span class="eyebrow">✨ კეთილი იყოს შენი მობრძანება</span>
+      <h1>აქ ყველაფერი <span>ანონიმურია.</span></h1>
+      <p>გააზიარე ამბები, გამოაქვეყნე ფოტოები და დაწერე კომენტარები.</p>
+    </section>
+
+    <section class="composer">
+      <h2>რა ხდება? 👀</h2>
+      <form id="postForm">
+        <textarea id="postText" maxlength="1000"
+          placeholder="მოუყევი შენი ამბავი..."></textarea>
+
+        <label class="upload" for="photoInput">
+          <span>📷</span>
+          <span id="uploadLabel">აირჩიე ფოტო</span>
+          <input id="photoInput" type="file"
+            accept="image/jpeg,image/png,image/webp,image/gif">
+        </label>
+
+        <div id="previewBox" class="preview-box hidden">
+          <img id="photoPreview" alt="არჩეული ფოტოს წინასწარი ნახვა">
+          <button type="button" id="removePhoto" class="remove-photo">
+            ფოტოს წაშლა ✕
+          </button>
+        </div>
+
+        <div class="composer-bottom">
+          <span class="hint">იყავი კეთილგანწყობილი 💗</span>
+          <button type="submit" id="publishBtn" class="primary-btn">
+            გამოაქვეყნე ↗
+          </button>
+        </div>
+        <p id="formMessage" class="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="feed-section">
+      <div class="feed-heading">
+        <div>
+          <h2>სიახლეები</h2>
+          <p>ამბები, რომლებსაც ყველა განიხილავს</p>
+        </div>
+        <span class="live-label"><span></span> აქტიური</span>
+      </div>
+
+      <div id="postsFeed" class="feed"></div>
+      <div id="emptyState" class="empty-state">
+        <div class="empty-icon">💭</div>
+        <h3>ჯერ სიჩუმეა...</h3>
+        <p>იყავი პირველი, ვინც ამბავს გააზიარებს!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">ჭორაობა<span>.</span></a>
+    <p>გააზიარე ამბები, პატივი ეცი ერთმანეთს 💗</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

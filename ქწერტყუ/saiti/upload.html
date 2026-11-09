@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ჭორაობა | ფოტოს ატვირთვა</title>
+    <link rel="stylesheet" href="./app.css" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body class="posts-body" data-page="upload">
+    <div class="instagram-layout">
+      <div class="setup-notice" id="setupNotice" hidden><strong>Backend ჯერ არ არის მიერთებული.</strong> კონფიგურაციისთვის გახსენი <a href="README.md">README</a>.</div>
+      <aside class="instagram-sidebar">
+        <a class="instagram-wordmark" href="index.html">ჭორაობა</a>
+        <nav class="instagram-nav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html"><span class="nav-icon">⌂</span><span>მთავარი</span></a>
+          <a href="posts.html"><span class="nav-icon">▦</span><span>პოსტები</span></a>
+          <a class="active" href="upload.html" aria-current="page"><span class="nav-icon">＋</span><span>შექმნა</span></a>
+          <a data-account-link href="auth.html#login"><span class="nav-icon">◉</span><span data-account-label>ანგარიში</span></a>
+          <a data-admin-link href="admin.html" hidden><span class="nav-icon">⚙</span><span>ადმინისტრატორი</span></a>
+        </nav>
+        <a class="sidebar-profile" href="account.html"><span class="profile-mini">?</span><span data-auth-email>სტუმარი</span></a>
+      </aside>
+
+      <main class="instagram-main upload-main">
+        <section class="upload-panel">
+          <div class="upload-heading"><p class="explore-eyebrow">საერთო ლენტა</p><h1>შექმენი პოსტი</h1></div>
+          <form id="postForm" class="instagram-upload-form">
+            <label class="field-label" for="postCaption">წარწერა</label>
+            <textarea id="postCaption" name="caption" rows="3" maxlength="500" placeholder="რას ფიქრობ ამ ფოტოზე?"></textarea>
+            <label class="instagram-file-picker" for="imageInput">
+              <input id="imageInput" name="image" type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" required />
+              <span class="file-picker-icon">＋</span>
+              <strong>აირჩიე ფოტო</strong>
+              <small>JPG, JPEG, PNG ან WebP · მაქსიმუმ 5 მბ</small>
+            </label>
+            <img id="imagePreview" class="image-preview" alt="ფოტოს გადახედვა" hidden />
+            <p id="uploadMessage" class="form-message" role="status"></p>
+            <p id="uploadSetupHint" class="upload-setup-hint" hidden>ღრუბელში გამოქვეყნებისთვის საჭიროა Supabase-ის Project URL და anon/public key. შეავსე <a href="supabase-config.js">supabase-config.js</a> და მიჰყევი <a href="README.md">დაყენების ინსტრუქციას</a>.</p>
+            <p id="authRequired" class="auth-message" hidden>ფოტოს ასატვირთად ჯერ <a href="auth.html#login">შედი ანგარიშში</a>.</p>
+            <button class="primary-action" type="submit">გამოქვეყნება</button>
+          </form>
+        </section>
+      </main>
+
+      <aside class="instagram-suggestions">
+        <div class="current-profile"><span class="suggestion-avatar">ა</span><span class="suggestion-copy"><strong data-auth-email>სტუმარი</strong><small>პოსტი შენახული იქნება ანგარიშთან</small></span></div>
+        <div class="suggestion-heading"><strong>გამოქვეყნების წესები</strong></div>
+        <section class="privacy-note"><strong>ფოტო და აღწერა</strong><p>სხვა მომხმარებლები ხედავენ ფოტოსა და ტექსტს, მაგრამ არა ავტორის ანგარიშს.</p><a href="privacy.html">კონფიდენციალურობა</a></section>
+        <p class="suggestion-footer">ატვირთული ფაილები ინახება Supabase Storage-ში; დასაშვებია JPG, JPEG, PNG და WebP, მაქსიმუმ 5 მბ.</p>
+      </aside>
+    </div>
+  </body>
+</html>
